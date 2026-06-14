@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Store - Shop the best products with modern style. Clothing, footwear, accessories, bags, and electronics.">
+    <meta name="theme-color" content="#0b1524">
+    <link rel="canonical" href="https://modern-stores.netlify.app/">
+    <link rel="sitemap" type="application/xml" href="index.html/sitemap.xml">
+    <title>Modern Premium Products & Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🛍️ Premium Store </div>
+        <ul class="menu">
+            <li><a href='#'>Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li class="category-menu">
+                <a href="#">Categories</a>
+                <div class="dropdown">
+                    <a href="#">Clothing</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Electronics</a>
+                </div>
+            </li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="🔍 Search products...">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        <div class="nav-right">
+            <div class="cart-icon" onclick="openCart()">
+            <span id="cartCount">Your cart💳 </span>
+            </div>
+            <div class="user-menu" onclick="toggleUserMenu()">
+                👤
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Trust Badges Section -->
+<section class="trust-badges">
+    <div class="badge">
+        <div class="badge-icon">🚚</div>
+        <h4>Free Shipping</h4>
+        <p>On orders over $100</p>
+    </div>
+    <div class="badge">
+        <div class="badge-icon">↩️</div>
+        <h4>30-Day Returns</h4>
+        <p>Hassle-free returns</p>
+    </div>
+    <div class="badge">
+        <div class="badge-icon">🔒</div>
+        <h4>Secure Payment</h4>
+        <p>100% secure transactions</p>
+    </div>
+    <div class="badge">
+        <div class="badge-icon">💬</div>
+        <h4>24/7 Support</h4>
+        <p>Dedicated customer service</p>
+    </div>
+</section>
+<header>
+     <div class="floating">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="glow"></div>
+    <div class="hero-content">
+        <h3>PREMIUM STORE</h3>
+        
+
+        <h1>
+            Every Day Pick A <br>
+            <span>New Collection</span>
+        </h1>
+        <p>Discover the best products with modern style</p>
+    </div>
+    
+</header>
+
+<!-- Advanced Features Banner -->
+<section class="advanced-features">
+    <div class="feature-banner">
+        <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <h4>AI-Powered Recommendations</h4>
+            <p>Personalized shopping based on your preferences</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🌍</span>
+            <h4>Global Shipping</h4>
+            <p>Fast delivery to 50+ countries</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">💳</span>
+            <h4>Multiple Payment Options</h4>
+            <p>Visa, PayPal, Apple Pay, Google Pay & more</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🎯</span>
+            <h4>Best Price Guarantee</h4>
+            <p>Find a lower price? We'll match it</p>
+        </div>
+    </div>
+</section>
+
+<!-- Products -->
+<section class="products-section">
+    <div class="section-header">
+        <h2>Featured Products</h2>
+        <p>Explore our newest premium items, selected for quality and style.</p>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products">
+
+    <!-- Product 1 -->
+    <div class="card">
+        <div class="card-inner">
+        <div class="badge-new">NEW</div>
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/shirt.webp" alt="shirt">
+        </div>
+
+        <span class="category">Clothing</span>
+        <div class="rating">⭐ 4.8 (234 reviews)</div>
+        <h2>Stylish Shirt</h2>
+        <p class="price">$500</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 85%"></span>
+            <span class="stock-text">15 in stock</span>
+        </div>
+        <button class="card" onclick="buyNow('shirt',500)">🛒 Buy Now</button>
+       </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <div class="card-inner">
+        <div class="badge-bestseller">BESTSELLER</div>
+                      
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/shoes.jpg" alt="shoes">
+        </div>
+
+        <span class="category">Footwear</span>
+        <div class="rating">⭐ 4.9 (456 reviews)</div>
+        <h2>Premium Shoes</h2>
+        <p class="price">$1200</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 100%"></span>
+            <span class="stock-text">32 in stock</span>
+        </div>
+        <button class="card" onclick="buyNow('Shoes',1200)">🛒 Buy Now</button>
+
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+        <div class="card-inner">
+        <div class="badge-hot">HOT DEAL</div>
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/watch.jpg" alt="watch">
+        </div>
+
+        <span class="category">Accessories</span>
+        <div class="rating">⭐ 4.7 (189 reviews)</div>
+        <h2>Luxury Watch</h2>
+        <p class="price">$800</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 45%"></span>
+            <span class="stock-text">Only 8 left</span>
+        </div>
+        <button class="card" onclick="buyNow('Watch',800)">🛒 Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+
+        <div class="card-inner">
+        <div class="badge-sale">SALE 20%</div>
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/glasses.jpg" alt="glasses">
+        </div>
+
+        <span class="category">Accessories</span>
+        <div class="rating">⭐ 4.6 (312 reviews)</div>
+        <h2>Cool Glasses</h2>
+        <p class="price">$600</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 60%"></span>
+            <span class="stock-text">12 in stock</span>
+        </div>
+        <button class="card" onclick="buyNow('Glasses',600)">🛒 Buy Now</button>
+       
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="card">
+        <div class="card-inner">
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/bag.jpg" alt="bag">
+        </div>
+
+        <span class="category">Bags</span>
+        <div class="rating">⭐ 4.8 (278 reviews)</div>
+        <h2>Travel Backpack</h2>
+        <p class="price">$1500</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 75%"></span>
+            <span class="stock-text">20 in stock</span>
+        </div>
+        <button class="card" onclick="buyNow('Bag',1500)">🛒 Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="card">
+        <div class="card-inner">
+        <div class="badge-bestseller">BESTSELLER</div>
+        <span class="heart">❤</span>
+
+        <div class="img-box">
+            <img src="images/headphone.jpg" alt="headphone">
+        </div>
+
+        <span class="category">Electronics</span>
+        <div class="rating">⭐ 5.0 (512 reviews)</div>
+        <h2>Wireless Headphone</h2>
+        <p class="price">$2000</p>
+        <div class="stock-indicator">
+            <span class="stock-bar" style="width: 90%"></span>
+            <span class="stock-text">28 in stock</span>
+        </div>
+        <button class="card" onclick="buyNow('Headphone',2000)">🛒 Buy Now</button>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Features/Why Choose Us Section -->
+<section class="features-section">
+    <div class="features-header">
+        <h2>Why Choose Us</h2>
+        <p>The reasons customers love our premium store</p>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Curated Selection</h3>
+            <p>Handpicked products from top brands worldwide</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Delivery</h3>
+            <p>Quick shipping with real-time tracking</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💎</div>
+            <h3>Premium Quality</h3>
+            <p>100% authentic products with warranty</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Expert Support</h3>
+            <p>Dedicated customer service team available 24/7</p>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="stats-section">
+    <div class="stat-item">
+        <h3 class="stat-number" data-count="50000">0</h3>
+        <p class="stat-label">Happy Customers</p>
+    </div>
+    <div class="stat-item">
+        <h3 class="stat-number" data-count="10000">0</h3>
+        <p class="stat-label">Products Sold</p>
+    </div>
+    <div class="stat-item">
+        <h3 class="stat-number" data-count="98">0</h3>
+        <p class="stat-label">Satisfaction Rate %</p>
+    </div>
+    <div class="stat-item">
+        <h3 class="stat-number" data-count="50">0</h3>
+        <p class="stat-label">Countries Served</p>
+    </div>
+</section>
+
+<!-- Smart Recommendations Section -->
+<section class="recommendations-section">
+    <h2>Trending Now</h2>
+    <p class="section-subtitle">Best-selling products this week</p>
+    
+    <div class="trending-grid">
+        <div class="trending-card">
+            <div class="trending-rank">1</div>
+            <div class="trending-image">👠</div>
+            <h4>Premium Shoes</h4>
+            <p class="trending-price">$1200</p>
+            <p class="trending-info">⭐ 4.9 • 456 reviews</p>
+            <div class="trending-indicator">↑ 340% this week</div>
+        </div>
+        <div class="trending-card">
+            <div class="trending-rank">2</div>
+            <div class="trending-image">🎧</div>
+            <h4>Wireless Headphone</h4>
+            <p class="trending-price">$2000</p>
+            <p class="trending-info">⭐ 5.0 • 512 reviews</p>
+            <div class="trending-indicator">↑ 280% this week</div>
+        </div>
+        <div class="trending-card">
+            <div class="trending-rank">3</div>
+            <div class="trending-image">👜</div>
+            <h4>Travel Backpack</h4>
+            <p class="trending-price">$1500</p>
+            <p class="trending-info">⭐ 4.8 • 278 reviews</p>
+            <div class="trending-indicator">↑ 220% this week</div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Get answers to common questions about our products and services</p>
+    </div>
+    
+    <div class="faq-grid">
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>How long does delivery take?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Standard delivery takes 3-5 business days. We also offer express delivery (1-2 days) for an additional fee. Orders are shipped with tracking information.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>What's your return policy?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We offer a 30-day return policy. Products must be unused, in original packaging, and come with the receipt. Returns are free for defective items.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>Do you offer international shipping?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes! We ship to over 50 countries worldwide. International shipping costs vary by location. Taxes and customs fees may apply.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>Are your products authentic?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>100% authentic! We source all products directly from authorized manufacturers and distributors. Each item comes with authenticity guarantee.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>What payment methods do you accept?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We accept credit cards, debit cards, digital wallets, and bank transfers. All payments are encrypted and secure with SSL protection.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <h4>How can I track my order?</h4>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>After shipment, you'll receive a tracking number via email. You can track your package in real-time on our website or carrier's website.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <div>
+            <p class="cart-subtitle">Business Cart</p>
+            <h2>Cart Summary</h2>
+        </div>
+        <button class="cart-close" onclick="closeCart()">✕</button>
+    </div>
+    <div class="cart-body">
+        <div class="cart-status">Review your selected items, business quantities, and delivery details before placing your order.</div>
+        <div id="cart-items"></div>
+    </div>
+    <div class="cart-footer">
+        <div class="footer-summary">
+            <span>Order Total</span>
+            <strong>$<span id="total">0</span></strong>
+        </div>
+        <div class="checkout-section">
+            <h3>Delivery & Contact</h3>
+            <input type="text" id="name" placeholder="Full name">
+            <input type="number" id="phone" placeholder="Phone number">
+            <textarea id="address" placeholder="Delivery address"></textarea>
+            <div class="footer-summary">
+                <span>Checkout total</span>
+                <strong>$<span id="chekout-total">0</span></strong>
+            </div>
+            <button class="primary-btn" onclick="confirmOrder()">Confirm Order</button>
+            <button class="secondary-btn" onclick="closeCart()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Payment & Security Section -->
+<section class="security-section">
+    <h2>🔒 Safe & Secure Shopping</h2>
+    <div class="security-grid">
+        <div class="security-item">
+            <h3>🛡️ SSL Encrypted</h3>
+            <p>All transactions are protected with 256-bit SSL encryption</p>
+        </div>
+        <div class="security-item">
+            <h3>💳 Secure Checkout</h3>
+            <p>PCI DSS compliant payment processing</p>
+        </div>
+        <div class="security-item">
+            <h3>🔐 Data Protection</h3>
+            <p>Your personal information is never shared</p>
+        </div>
+        <div class="security-item">
+            <h3>✅ Verified Seller</h3>
+            <p>Trusted by 100,000+ customers worldwide</p>
+        </div>
+    </div>
+    <div class="payment-methods">
+        <h3>Accepted Payment Methods</h3>
+        <div class="payment-icons">
+            <div class="payment-icon" title="Visa">💳 Visa</div>
+            <div class="payment-icon" title="Mastercard">💳 Mastercard</div>
+            <div class="payment-icon" title="PayPal">🅿️ PayPal</div>
+            <div class="payment-icon" title="Apple Pay">🍎 Apple Pay</div>
+            <div class="payment-icon" title="Google Pay">🔵 Google Pay</div>
+            <div class="payment-icon" title="Bank Transfer">🏦 Bank Transfer</div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section">
+            <h3>🛍️ Premium Store</h3>
+            <p>Your destination for premium products and exclusive collections. Quality, style, and affordability in one place.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="LinkedIn">in</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-section">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Warranties</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>📞 +8801993627956</p>
+            <p>📧 tanvirbaby@outlook.com</p>
+            <p>📍 123 Business Street, City, Country</p>
+            <p>⏰ Mon-Fri: 9 AM - 6 PM</p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Premium Store. All rights reserved.</p>
+        <div class="footer-legal">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms & Conditions</a> | 
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
+
+
+
+
